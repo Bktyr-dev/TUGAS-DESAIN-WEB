@@ -1,43 +1,152 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>Admin Dashboard</title>
+<title>Admin Pindaki</title>
 <style>
-body{font-family:Arial;background:#f4f6f3}
-.container{max-width:1000px;margin:60px auto}
-.card{background:white;padding:20px;border-radius:10px;margin-bottom:20px}
-table{width:100%}
-th,td{padding:10px;border-bottom:1px solid #eee}
-</style>
+
+body{
+font-family: Arial;
+background:#eeeeee;
+margin:40px;
+}
+
+h1{
+margin-bottom:20px;
+color:rgb(3, 55, 3)
+}
+
+.box{
+background:#0c590c;
+color:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+color:black;
+margin-top:10px;
+}
+
+th,td{
+padding:10px;
+border:1px solid #ccc;
+}
+
+th{
+background:#dddddd;
+}</style>
 </head>
+
 <body>
 
-<div class="container">
-<h2>Admin Dashboard</h2>
+<h1>Back Office Pindaki</h1>
 
-<div class="card">
-<h3>Statistik</h3>
-<p>Total Produk: 25</p>
-<p>Total Pesanan: 40</p>
-</div>
-
-<div class="card">
-<h3>Manajemen Produk</h3>
+<div class="box">
+<h2>Data Produk</h2>
 <table>
 <tr>
-<th>Produk</th>
-<th>Harga</th>
-<th>Status</th>
+<th>ID</th>
+<th>Nama Produk</th>
+<th>Stok</th>
 </tr>
+
 <tr>
-<td>Tenda</td>
-<td>40000</td>
-<td>Tersedia</td>
+<td>1</td>
+<td>Tenda 4 orang</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Carrier Rhinos 60L</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Sepatu Hiking</td>
+<td>8</td>
 </tr>
 </table>
 </div>
 
+<div class="box">
+<h2>Data Anggota Peminjam</h2>
+<table>
+<tr>
+<th>ID Anggota</th>
+<th>Nama</th>
+<th>No HP</th>
+</tr>
+
+<tr>
+<td>A01</td>
+<td>Budi</td>
+<td>08123456789</td>
+</tr>
+
+<tr>
+<td>A02</td>
+<td>Sri</td>
+<td>08223334444</td>
+</tr>
+</table>
+</div>
+
+<div class="box">
+<h2>Data Peminjaman</h2>
+<table>
+<tr>
+<th>ID Pinjam</th>
+<th>Nama</th>
+<th>Produk</th>
+<th>Jumlah</th>
+</tr>
+
+<tr>
+<td>P01</td>
+<td>Budi</td>
+<td>Tenda</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>P02</td>
+<td>Sri</td>
+<td>Carrier Rhinos 60L</td>
+<td>1</td>
+</tr>
+</table>
+</div>
+
+<div class="box">
+<h2>Detail Peminjam</h2>
+<table>
+<tr>
+<th>Nama</th>
+<th>Produk</th>
+<th>Tanggal Pinjam</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Budi</td>
+<td>Tenda</td>
+<td>10-03-2026</td>
+<td>Dipinjam</td>
+</tr>
+
+<tr>
+<td>Sri</td>
+<td>Carrier Rhinos 60L</td>
+<td>11-03-2026</td>
+<td>Selesai</td>
+</tr>
+</table>
 </div>
 
 </body>
