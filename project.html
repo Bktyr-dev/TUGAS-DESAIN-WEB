@@ -1,0 +1,101 @@
+<!-- =============================== -->
+<!-- FILE: index.html (Landing Page) -->
+<!-- =============================== -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pindaki</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body{font-family:Arial;margin:0;background:#f4f6f3}
+.nav{display:flex;justify-content:space-between;padding:20px;background:white;border-bottom:1px solid #eee}
+.btn{background:#2e7d32;color:white;padding:10px 18px;border-radius:8px;border:none}
+.container{width:90%;max-width:1100px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:white;padding:20px;border-radius:12px;border:1px solid #eee}
+.hero{padding:80px 0;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="nav">
+<b>PINDAKI</b>
+<div>
+<a href="login.html">Login</a>
+</div>
+</div>
+
+<div class="hero container">
+<h1>Sewa Peralatan Mendaki</h1>
+<p>Semua perlengkapan gunung dalam satu tempat</p>
+<a href="dashboard.html"><button class="btn">Mulai Sewa</button></a>
+</div>
+
+<div class="container">
+<h2>Kategori</h2>
+<div class="grid">
+<div class="card">Tenda</div>
+<div class="card">Sepatu</div>
+<div class="card">Carrier</div>
+<div class="card">Alat Masak</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!-- =============================== -->
+<!-- FILE: dashboard.html -->
+<!-- =============================== -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f6f3}
+.sidebar{width:220px;height:100vh;background:white;position:fixed;padding:20px;border-right:1px solid #eee}
+.sidebar a{display:block;margin:10px 0}
+.main{margin-left:240px;padding:30px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:white;padding:15px;border-radius:10px;border:1px solid #eee}
+img{width:100%;border-radius:8px}
+button{background:#2e7d32;color:white;border:none;padding:8px 12px}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+<b>PINDAKI</b>
+<a href="dashboard.html">Beranda</a>
+<a href="orders.html">Pesanan</a>
+<a href="profile.html">Profile</a>
+</div>
+
+<div class="main">
+<h2>Produk</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<h4>Tenda</h4>
+<a href="product.html"><button>Detail</button></a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504280390368-361c6d9f38f4">
+<h4>Carrier</h4>
+<a href="product.html"><button>Detail</button></a>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
